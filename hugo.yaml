@@ -23,6 +23,8 @@ params:
   ShowRssButtonInSectionTermList: true
   UseHugoToc: false
 
+  math: true  # 启用数学公式支持
+
 menu:
   main:
     - identifier: blog
