@@ -29,3 +29,8 @@ menu:
       name: Blog
       url: /posts/
       weight: 10
+    - identifier: flow-matching
+      name: Flow Matching
+      url: /posts/flow-matching/
+      weight: 20
+
