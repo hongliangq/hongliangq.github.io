@@ -1,0 +1,8 @@
+/* 图片右浮动环绕 */
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px; /* 上右下左 */
+  max-width: 30%;           /* 控制最大宽度，不要撑满页面 */
+  height: auto;             /* 保持宽高比 */
+  border-radius: 8px;       /* 可选：让图片边角圆润 */
+}

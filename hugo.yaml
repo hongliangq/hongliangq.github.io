@@ -1,15 +1,17 @@
 baseURL: "https://hongliangq.github.io/"
 languageCode: "en-us"
-title: "Qiao's Blog"
+title: "Qiao's Space"
 theme: "PaperMod"
 
 # 如果你希望 RSS、Sitemap 等可用
 enableRobotsTXT: true
-disableKinds: ["taxonomy", "taxonomyTerm"]  # 可选：隐藏标签页等
+disableKinds: ["RSS"]  # 可选：隐藏标签页等
 
 params:
   # 是否显示首页信息卡片；如果你用 content/_index.md 填欢迎界面，可以设置 false
-  homeInfoParams: false
+  homeInfoParams:
+    Title: Hello, There!
+    Content: Welcome to my blogs about Math, Machine Learning and Programming.
 
   # 其它 PaperMod 参数（可以按需加）
   # 下面是一些例子：
@@ -25,14 +27,30 @@ params:
 
   math: true  # 启用数学公式支持
 
+  taxonomies:
+    category: categories
+    tag: tags
+  
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # ShowToc: true
+  # TocOpen: true
+
 menu:
   main:
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 1
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 3
     - identifier: blog
-      name: Blog
+      name: Content
       url: /posts/
-      weight: 10
-    - identifier: flow-matching
-      name: Flow Matching
-      url: /posts/flow-matching/
-      weight: 20
+      weight: 2
 
