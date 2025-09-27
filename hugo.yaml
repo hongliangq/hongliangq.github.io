@@ -1,4 +1,31 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
-theme: PaperMod
+baseURL: "https://hongliangq.github.io/"
+languageCode: "en-us"
+title: "Qiao's Blog"
+theme: "PaperMod"
+
+# 如果你希望 RSS、Sitemap 等可用
+enableRobotsTXT: true
+disableKinds: ["taxonomy", "taxonomyTerm"]  # 可选：隐藏标签页等
+
+params:
+  # 是否显示首页信息卡片；如果你用 content/_index.md 填欢迎界面，可以设置 false
+  homeInfoParams: false
+
+  # 其它 PaperMod 参数（可以按需加）
+  # 下面是一些例子：
+  defaultTheme: auto        # day / night / auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: false
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 10
